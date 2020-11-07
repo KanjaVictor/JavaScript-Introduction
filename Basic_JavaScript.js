@@ -6,6 +6,7 @@
 /*(2).Multi-line
 comment*/
 
+
 //LESSON 2
 //Declaring JavaScript Variables
 //Variables can store different values at different times.
@@ -26,6 +27,7 @@ comment*/
 
 */
 
+
 //LESSON 3
 
 //(1).Storing values with the assignment operator.
@@ -41,12 +43,14 @@ Uninitialized variables have an initial value of undefined.
 ->If you concatenate a string with an undefined variable your result will be "undefined".
 */
 
+
 //LESSON 4
 
 /*
 ->Variables and Function names are case sensitive
 Best Practice: Write variableNames in camelCase.
 */
+
 
 //LESSON 5
 
@@ -74,6 +78,7 @@ Best Practice: Write variableNames in camelCase.
 ( /= )
 
 */
+
 
 //LESSON 6
 
@@ -126,6 +131,7 @@ immutableStr[0] ="J";
 //Correct method
 immutableStr = "Job";
 
+
 //LESSON 7
 //Using JavaScript Arrays.
 
@@ -145,12 +151,54 @@ var accessData = myArray[2][1];
 exampleArray[1] = "Developer";
 
 //Manipulate Arrays
-//Adding with push() function
+//Adding with unshift() function -->Adding at the beginning of the array.
+var unshiftArr = ["X","Y","Z"];
+unshiftArr.unshift("XYZ");
+//Adding with push() function -->Adding at the end of an array.
 var pushArr = [1,2,3];
 pushArr.push(4);
-//Removing with pop() function--> Removes the last element.
-var popArr = [5,6,7,8,9];
-popArr.pop();
+
+
 //Removing with shift() function -->Removes the first element.
 var shiftArr = ["A","B","C","D","E"];
 shiftArr.shift();
+//Removing with pop() function--> Removes the last element.
+var popArr = [5,6,7,8,9];
+popArr.pop();
+
+
+//LESSON 8
+//Writing functions
+function functionName(){
+  console.log("Hello World");
+}
+//Invoking or calling the function.
+functionName();
+
+//Passing vaalues to functions with arguments.
+/*
+function functionParam(param1, param2){
+  console.log(param1, param2);
+}
+//Invoking or calling the function.
+functionParam("Hello","World");
+*/
+
+function funAddition(num1, num2){
+  console.log(num1 + num2);
+}
+funAddition(2,2);
+
+//Global Scope, Local Scope, and Functions.
+/*
+Scope->Visibilty of variables.
+Variables defined outside a function block have a global scope.
+Variables declared inside a function block has a local scope.Outside the function it's undefined.
+*/
+
+//Return
+
+function threeAddition(num){
+  return num + 3;
+}
+var answer = threeAddition(7);
