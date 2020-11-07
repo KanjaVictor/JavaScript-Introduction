@@ -197,8 +197,16 @@ Variables declared inside a function block has a local scope.Outside the functio
 */
 
 //Return
-
 function threeAddition(num){
   return num + 3;
 }
 var answer = threeAddition(7);
+
+//Queue -->An abstract data structure where items are kept in order.
+function nextInLine(arr[], item){
+  arr[].push(item);
+  item = arr[].shift();
+  return item;
+}
+
+//Boolean values -->Can only be two values:True "on" or False "off".
