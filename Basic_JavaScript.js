@@ -1,3 +1,5 @@
+//---CHEAT SHEET 1.0---
+
 //LESSON 1
 //There are two ways to write comments:
 
