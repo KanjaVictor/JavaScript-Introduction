@@ -212,3 +212,23 @@ function nextInLine(arr[], item){
 }
 
 //Boolean values -->Can only be two values:True "on" or False "off".
+
+//--Conditional(Ternary) Operator--
+//The syntax:
+condition ? expression-if-true : expression-if-false;
+
+//Example
+function checkEqual(a, b) {
+    var status = a == b ? "Equal": "Not Equal";
+    console.log(status);
+}
+
+checkEqual(1, 2);
+
+//--Multiple Conditional(Ternary) Operator--
+//Example
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" //if
+    : (a > b) ? "a is greater"//else if
+    : "b is greater";//else
+}
