@@ -1,6 +1,7 @@
 //---CHEAT SHEET 1.0---
 
-//LESSON 1
+//------------------------------------------------------------------------LESSON 1
+
 //There are two ways to write comments:
 
 //(1).In-line comment
@@ -9,7 +10,8 @@
 comment*/
 
 
-//LESSON 2
+//------------------------------------------------------------------------LESSON 2
+
 //Declaring JavaScript Variables
 //Variables can store different values at different times.
 //Variables can be made up of numbers, letters and $ or _ but may not start with a number.
@@ -30,7 +32,7 @@ comment*/
 */
 
 
-//LESSON 3
+//------------------------------------------------------------------------LESSON 3
 
 //(1).Storing values with the assignment operator.
 //Assignment Operator(=)
@@ -46,7 +48,7 @@ Uninitialized variables have an initial value of undefined.
 */
 
 
-//LESSON 4
+//------------------------------------------------------------------------LESSON 4
 
 /*
 ->Variables and Function names are case sensitive
@@ -54,7 +56,7 @@ Best Practice: Write variableNames in camelCase.
 */
 
 
-//LESSON 5
+//------------------------------------------------------------------------LESSON 5
 
 //1.Arithmetic operators :integers and floats ,numeric.
 
@@ -82,7 +84,7 @@ Best Practice: Write variableNames in camelCase.
 */
 
 
-//LESSON 6
+//------------------------------------------------------------------------LESSON 6
 
 //Declaring string variables
 var varName = "Your Name";
@@ -134,7 +136,8 @@ immutableStr[0] ="J";
 immutableStr = "Job";
 
 
-//LESSON 7
+//------------------------------------------------------------------------LESSON 7
+
 //Using JavaScript Arrays.
 
 //Basic Array
@@ -169,7 +172,8 @@ var popArr = [5,6,7,8,9];
 popArr.pop();
 
 
-//LESSON 8
+//-------------------------------------------------------------------------LESSON 8
+
 //Writing functions
 function functionName(){
   console.log("Hello World");
@@ -177,7 +181,7 @@ function functionName(){
 //Invoking or calling the function.
 functionName();
 
-//Passing vaalues to functions with arguments.
+//Passing values to functions with arguments.
 /*
 function functionParam(param1, param2){
   console.log(param1, param2);
@@ -191,23 +195,26 @@ function funAddition(num1, num2){
 }
 funAddition(2,2);
 
+
 //Global Scope, Local Scope, and Functions.
+
 /*
 Scope->Visibilty of variables.
 Variables defined outside a function block have a global scope.
-Variables declared inside a function block has a local scope.Outside the function it's undefined.
+Variables declared inside a function block has a local scope. Outside the function will be undefined.
 */
 
-//Return
+
+//Return -->Ends function execution and specifies a value to be returned to the function caller.
 function threeAddition(num){
   return num + 3;
 }
 var answer = threeAddition(7);
 
 //Queue -->An abstract data structure where items are kept in order.
-function nextInLine(arr[], item){
-  arr[].push(item);
-  item = arr[].shift();
+function nextInLine(arr, item){
+  arr.push(item);
+  item = arr.shift();
   return item;
 }
 
@@ -215,11 +222,13 @@ function nextInLine(arr[], item){
 
 //--Conditional(Ternary) Operator--
 //The syntax:
-condition ? expression-if-true : expression-if-false;
+//condition ? expression-if-true : expression-if-false;
 
 //Example
 function checkEqual(a, b) {
     var status = a == b ? "Equal": "Not Equal";
+    //condition ? expression-if-true : expression-if-false;
+
     console.log(status);
 }
 
