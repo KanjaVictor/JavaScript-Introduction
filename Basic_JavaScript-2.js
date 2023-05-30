@@ -1,12 +1,15 @@
 //---CHEAT SHEET 2.0---
 
-//LOOPS
+//-------------------------------------------------LOOPS
 
-//IF Statements
+//----------------------IF Statements
 
+/* 
 if(condition is true){
   statement is executed
 }
+ */
+
 //The conditions are known as Boolean conditions.
 
 
@@ -79,13 +82,12 @@ if (condition1) {
   statement2
 } else if (condition3) {
   statement3
-. . .
 } else {
   statementN
 }
 
 //Example
-Golf Code
+//-----------------------------Golf Code
 /*Strokes -	Return
 1	 - "Hole-in-one!"
 <= par - 2  -	"Eagle"
@@ -118,7 +120,7 @@ function golfScore(par, strokes) {
 golfScore(5, 4);
 
 
-//Switch statements
+//----------------------------------Switch statements
 /*
 case values are tested with strict equality (===).
 The break tells JavaScript to stop executing statements.
@@ -166,7 +168,7 @@ caseInSwitch(5);
 
 //--Iterate with JavaScript While Loops--
 while (true) {
-  statement to be executed;
+  //statement to be executed;
 }
 var ourArray = [];
 var i = 0;
@@ -178,7 +180,7 @@ while(i < 5) {
 //(1)--Iterate with JavaScript For Loops--
 //Can run the same code multiple times by using a loop.
 for ([initialExpression]; [conditionExpression]; [incrementExpression]){
-  statement to be executed;
+  //statement to be executed;
 }
 //Example
 var ourArray = [];
